@@ -20,4 +20,22 @@ public class FireBenderTest {
     void jumpTest(){
         assertTrue(azula.jump().equals("Azula jumped using fire blast!"));
     }
+
+    @Test
+
+    void fireTempColourTestBlue(){
+        azula.setFireTemp(1990);
+        assertTrue(azula.getFireColour().equals("blue"));
+    }
+
+    @Test
+
+    void fireTempColourTestWhite(){
+        azula.setFireTemp(2401);
+        assertTrue(azula.getFireColour().equals("white"));
+    }
+
+
+
 }
+

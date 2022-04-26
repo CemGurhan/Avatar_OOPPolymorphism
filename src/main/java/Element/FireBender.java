@@ -8,7 +8,7 @@ public class FireBender extends Avatar {
     public FireBender(String name,int age, boolean good){
         super(name,age,good);
         this.fireColour = "orange";
-        this.fireTemp = 600;
+        this.fireTemp = 1000;
 
     }
 
@@ -25,7 +25,13 @@ public class FireBender extends Avatar {
     }
 
     public void setFireTemp(int fireTemp) {
+
         this.fireTemp = fireTemp;
+        if (fireTemp>=1980 && fireTemp<=2400){
+            this.fireColour= "blue";
+        }else if(fireTemp>2400){
+            this.fireColour = "white";
+        }
     }
 
     public String jump(){
