@@ -1,8 +1,5 @@
 package Element;
 
-import Action.Blast;
-import Action.Shoot;
-
 public class FireBender extends Avatar  {
 
     private String fireColour;
