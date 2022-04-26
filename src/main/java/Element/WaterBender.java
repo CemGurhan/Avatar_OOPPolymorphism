@@ -5,10 +5,13 @@ public class WaterBender extends Avatar {
     private String waterState;
     private String tribe;
 
-    public WaterBender(String name, int age, boolean good, String tribe){
-        super(name, age, good);
+
+
+    public WaterBender(String name, int age, boolean good,String element, String tribe){
+        super(name, age, good, element);
         this.tribe = tribe;
         this.waterState = "liquid";
+
     }
 
     public String getWaterState() {
@@ -26,6 +29,8 @@ public class WaterBender extends Avatar {
     public void setWaterState(String waterState) {
         this.waterState = waterState;
     }
+
+
 
     public String jump(){
         return this.name + " jumps using water blast!";

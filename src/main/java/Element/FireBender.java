@@ -1,16 +1,24 @@
 package Element;
 
-public class FireBender extends Avatar {
+import Action.Blast;
+import Action.Shoot;
+
+public class FireBender extends Avatar  {
 
     private String fireColour;
     private int fireTemp;
 
-    public FireBender(String name,int age, boolean good){
-        super(name,age,good);
+
+
+    public FireBender(String name,int age, boolean good, String element){
+        super(name,age,good,element);
         this.fireColour = "orange";
         this.fireTemp = 1000;
 
+
     }
+
+
 
     public String getFireColour() {
         return fireColour;
@@ -37,6 +45,16 @@ public class FireBender extends Avatar {
     public String jump(){
         return this.name + " jumped using fire blast!";
     }
+
+
+
+
+
+
+
+
+
+
 
 
 }

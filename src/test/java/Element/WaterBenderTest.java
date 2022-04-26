@@ -13,7 +13,7 @@ public class WaterBenderTest {
 
     @BeforeEach
     void setup(){
-        katara = new WaterBender("Katara",14, true, "Northern");
+        katara = new WaterBender("Katara",14, true, "Northern", "Water");
     }
 
     @Test

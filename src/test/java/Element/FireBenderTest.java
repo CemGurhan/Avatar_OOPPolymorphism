@@ -11,7 +11,7 @@ public class FireBenderTest {
     @BeforeEach
 
     void setup(){
-        azula = new FireBender("Azula",14,false);
+        azula = new FireBender("Azula",14,false, "Fire");
 
     }
 

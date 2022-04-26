@@ -5,10 +5,17 @@ public abstract class Avatar {
     private int age;
     private boolean good;
 
-    public Avatar(String name, int age, boolean good){
+    private String element;
+
+    public Avatar(String name, int age, boolean good,String element){
         this.name = name;
         this.age = age;
         this.good = good;
+        this.element = element;
+    }
+
+    public String getElement() {
+        return element;
     }
 
     public String getName() {
